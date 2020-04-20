@@ -24,5 +24,10 @@
   
   .main{
     margin-left:160px;
+    margin-right:20px;
     padding: 0px 10px;
   }
+
+table, th, td{
+  border: 1px solid black;
+}
