@@ -7,61 +7,100 @@
   
 <body>
   <div class="navbar">
-      <a href="index.html">Home</a>
-      <a href="experience.html">Experience and Skills</a>
-      <a href="Projects.html">Projects</a>
-      <a href="Teaching.html">Teaching</a>
-      <a href="Resources.html">Resources</a>
+    <a href="index.html">Home</a>
+    <a href="Experiences.html">Experience and Skills</a>
+    <a href="Projects.html">Projects</a>
+    <a href="Teaching.html">Teaching</a>
+    <a href="Resources.html">Resources</a>
   </div>
   
-  <div class="main">
-    <h2> Embedded Systems Projects</h2>
-    <h3> AES</h3>
-    <p> This project involved creating an AES hardware accelerator for the Zedboard.</p>
-    <p> More information can be found here: 
-      <a href="https://github.com/matthewbarondeau/AES_Hardware_Accelerator">AES</a>
-    </p> 
-    
-    <h3> RTOS</h3>
-    <p> This was originally developed for EE445M/380L-12 Real Time Operating Systems at UT Austin, but has been cleaned up and further flushed out. The labs range from a simple UART interpreter to a PI control algorithm for a robot car.</p>
-    <p> More information can be found here: 
-      <a href="https://github.com/matthewbarondeau/RTOS"> RTOS</a>
-    </p>
-    
-    <h3> Self Monitoring Stress System</h3>
-    <p> This project was part of the senior capstone course for 2019-2020 at UT Austin. Under Dr. Emily Porter, our team designed and built an embedded system and mobile application. The embedded processor, a TI MSP432P401R, was placed on a PCB. This PCB was sewn into a glove that a user will wear. The system collects heart rate, movement, and GSR and communicates the data through bluetooth to a mobile application. The mobile application then uses a knn model to classify the user as stressed or unstressed and communicate the status to them.</p>
-    <p> More information about the embedded system can be found here: 
-      <a href="https://github.com/matthewbarondeau/Self-Monitor-for-Detecting-Stress-Levels">SMSS</a>
-    </p>
-    <p> More information about the mobile application and model can be found here:
-      <a href="https://github.com/mattqd97/PowerPorterIOS"> IOS App</a>
-    </p>
-    
-    <h3> Audio Visualizer</h3>
-    <p> This project was part of the EE445L final project at UT Austin. This project used 2 TI TM4C123GH6PM Launchpads to read in audio data, perform a Fast Fourier Transform, then output the transform to a WS2812B LED screen.</p>
-    <p> More information can be found here:
-      <a href=""> Audio Visualizer</a>
-    </p>
-    
-    <h3> Tron</h3>
-    <p> This project was developed for EE319k for the TI TM4C123GH6PM. In this project, two players would compete in a head to head TRON light cycle game. The users would perform input using two ADCs sampling an analog joystick as well as two bottons. While the players competed, audio continuously played in response to in game events.</p>
-    <p> More information can be found here: 
-      <a href="https://github.com/matthewbarondeau/TronV2"> TronV2</a>
-    </p>
-    <hr noshade="">
-    <h2> Computer Architecture and FPGA Projects</h2>
-    <h3> Fuzzer</h3>
-    <p> This was the final project for EE382M-11 Verification of Digital Systems at UT Austin. Trey Boehm, Jordan Pamatmat, Steven Zhu, and myself created a test fuzzer for the RiscV SwerV core by Western Digital. More information to follow.</p>
-    <p> More information can be found here: 
-      <a href="https://gitlab.com/tboehm/verification"> Fuzzer</a>
-    </p>
+  <div class="row">
+    <div class="side-content"></div>
+    <div class="main-content">
+      <div class="content-header">
+        <a class="anchor" name="experience"></a>
+        <h2>Projects</h2>
+      </div>
+      
+      <div class="content-body">
 
-    <h3> ANN Hardware Accelerator</h3>
-    <p> This project was part of EE460M at UT Austin. It involved desiging a systolic array mulitiplier for floating point computations. Once the multiplier was designed, a Artificial Neural Network node was created with three hidden layers and computation was performed.</p>
-    <p> More information can be found here: 
-      <a href=""> ANN Hardware Accelerator</a>
-    </p>
-  </div>
-  
-</body>
+        <div class="card">
+          <div class="card-header">
+            <h3>AES Hardware Accelerator <href style = "float: right">Fall 2019</href></h3>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>This project involved creating an AES hardware accelerator for the Zedboard.</li>
+              <li>More Information can be found here:
+                <a href="https://github.com/matthewbarondeau/AES_Hardware_Accelerator">AES</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header">
+            <h3>Real Time Operating System <href style = "float: right">Spring 2019</href></h3>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>This was originally developed for EE445M/380L-12 Real Time Operating Systems at UT Austin, but has been cleaned up and further flushed out. The labs range from a simple UART interpreter to a PI control algorithm for a robot car.</li>
+              <li>More Information can be found here:
+                  <a href="https://github.com/matthewbarondeau/RTOS"> RTOS</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header">
+            <h3>Self Monitoring Stress System <href style = "float: right">Fall 2019 - Spring 2020</href></h3>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>This project was part of the senior capstone course for 2019-2020 at UT Austin. Under Dr. Emily Porter, our team designed and built an embedded system and mobile application. The embedded processor, a TI MSP432P401R, was placed on a PCB. This PCB was sewn into a glove that a user will wear. The system collects heart rate, movement, and GSR and communicates the data through bluetooth to a mobile application. The mobile application then uses a knn model to classify the user as stressed or unstressed and communicate the status to them.</li>
+              <li>More information about the embedded system can be found here: 
+                <a href="https://github.com/matthewbarondeau/Self-Monitor-for-Detecting-Stress-Levels">SMSS</a>
+              </li>
+              <li> More information about the mobile application and model can be found here: 
+                <a href="https://github.com/mattqd97/PowerPorterIOS"> IOS App</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header">
+            <h3>Tron Handheld video game <href style = "float: right">Spring 2017</href></h3>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>This project was developed for EE319k for the TI TM4C123GH6PM. In this project, two players would compete in a head to head TRON light cycle game. The users would perform input using two ADCs sampling an analog joystick as well as two bottons. While the players competed, audio continuously played in response to in game events.</li>
+              <li>More Information can be found here:
+                <a href="https://github.com/matthewbarondeau/TronV2"> TronV2</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>ANN Hardware Accelerator <href style = "float: right">Fall 2018</href></h3>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>This project was part of EE460M at UT Austin. It involved desiging a systolic array mulitiplier for floating point computations. Once the multiplier was designed, a Artificial Neural Network node was created with three hidden layers and computation was performed.
+              </li>
+              <li>More Information can be found here:
+                <a href=""> ANN Hardware Accelerator</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+      <div class="side-content"></div>
+    </div>  
+  </body>
 </html>
