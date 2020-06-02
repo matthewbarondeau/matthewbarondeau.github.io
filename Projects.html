@@ -30,7 +30,8 @@
           </div>
           <div class="card-content">
             <ul>
-              <li>This project involved creating an AES hardware accelerator for the Zedboard.</li>
+              <li>Developed AES accelerator for Zedboard as part of EE382N-4 at UT Austin</li>
+              <li>Wrote Verilog state machine to control AES core and Software to offload computation</li>
               <li>More Information can be found here:
                 <a href="https://github.com/matthewbarondeau/AES_Hardware_Accelerator">AES</a> 
               </li>
@@ -44,7 +45,9 @@
           </div>
           <div class="card-content">
             <ul>
-              <li>This was originally developed for EE445M/380L-12 Real Time Operating Systems at UT Austin, but has been cleaned up and further flushed out. The labs range from a simple UART interpreter to a PI control algorithm for a robot car.</li>
+              <li>Real-Time Operating System developed for TI TM4C123GH6PM</li>
+              <li>Originally design during EE445M course, but has been cleaned up and flushed out</li>
+              <li>Components include UART Interpreter, Priority Scheduler, Process Loader, and PI Control Application</li>
               <li>More Information can be found here:
                   <a href="https://github.com/matthewbarondeau/RTOS"> RTOS</a> 
               </li>
@@ -58,7 +61,10 @@
           </div>
           <div class="card-content">
             <ul>
-              <li>This project was part of the senior capstone course for 2019-2020 at UT Austin. Under Dr. Emily Porter, our team designed and built an embedded system and mobile application. The embedded processor, a TI MSP432P401R, was placed on a PCB. This PCB was sewn into a glove that a user will wear. The system collects heart rate, movement, and GSR and communicates the data through bluetooth to a mobile application. The mobile application then uses a knn model to classify the user as stressed or unstressed and communicate the status to them.</li>
+              <li>Senior design project at UT Austin under Dr. Emily Porter</li>
+              <li>Designed system consisting of MSP432, iOS application, and network of sensors to measure and track stress</li>
+              <li>Sensors collected heart rate, movement, and GSR</li>
+              <li>Sensors, MSP432, and power systems were laid out on PCB</li>
               <li>More information about the embedded system can be found here: 
                 <a href="https://github.com/matthewbarondeau/Self-Monitor-for-Detecting-Stress-Levels">SMSS</a>
               </li>
@@ -71,26 +77,13 @@
       
         <div class="card">
           <div class="card-header">
-            <h3>Tron Handheld video game <href style = "float: right">Spring 2017</href></h3>
-          </div>
-          <div class="card-content">
-            <ul>
-              <li>This project was developed for EE319k for the TI TM4C123GH6PM. In this project, two players would compete in a head to head TRON light cycle game. The users would perform input using two ADCs sampling an analog joystick as well as two bottons. While the players competed, audio continuously played in response to in game events.</li>
-              <li>More Information can be found here:
-                <a href="https://github.com/matthewbarondeau/TronV2"> TronV2</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
             <h3>ANN Hardware Accelerator <href style = "float: right">Fall 2018</href></h3>
           </div>
           <div class="card-content">
             <ul>
-              <li>This project was part of EE460M at UT Austin. It involved desiging a systolic array mulitiplier for floating point computations. Once the multiplier was designed, a Artificial Neural Network node was created with three hidden layers and computation was performed.
-              </li>
+              <li>Developed 8 and 16 bit floating point adder and multiplier in structural verilog</li>
+              <li>Created Multiplier Acculumator control logic and state machine</li>
+              <li>Originally part of EE460M course at UT Austin</li>
               <li>More Information can be found here:
                 <a href=""> ANN Hardware Accelerator</a>
               </li>
@@ -98,9 +91,24 @@
           </div>
         </div>
         
+        <div class="card">
+          <div class="card-header">
+            <h3>Tron Handheld video game <href style = "float: right">Spring 2017</href></h3>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>Originally designed for EE319k fial competition</li>
+              <li>Overhauled to include CAN based multiplayer, SD card storage, and cleaned up code</li>
+              <li>Two players play head to head over CAN in the classic game TRON</li>
+              <li>More Information can be found here:
+                <a href="https://github.com/matthewbarondeau/TronV2"> TronV2</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="side-content"></div>
-    </div>  
-  </body>
+    </div>
+    <div class="side-content"></div>
+  </div>  
+</body>
 </html>
