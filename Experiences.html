@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Experience and Skills</title>
+  <title>Experience and Projects</title>
   <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 
 <body>
   <div class="navbar">
     <a href="index.html">Home</a>
-    <a href="Experiences.html">Experience and Skills</a>
-    <a href="Projects.html">Projects</a>
+    <a href="Experiences.html">Experience and Projects</a>
     <a href="Teaching.html">Teaching</a>
-    <a href="Resources.html">Resources</a>
   </div>
   
   <div class="row">
@@ -21,7 +19,6 @@
         <h2>Technical Experience</h2>
       </div>
       <div class="content-body">
-
         <div class="card">
           <div class="card-header">
             <h3>CPU Design Intern, ARM <href style = "float: right">May 2020 - August 2020</href></h3>
@@ -32,7 +29,6 @@
             </ul>
           </div>
         </div>
-
         <div class="card">
           <div class="card-header">
             <h3>Undergraduate Teaching Assistant, UT ECE Department <href style = "float: right">August 2017 - May 2020</href></h3>
@@ -47,7 +43,6 @@
             </ul>
           </div>
         </div>
-
         <div class="card">
           <div class="card-header">
             <h3>Electrical Engineering Intern, Lockheed Martin <href style = "float: right">May 2019 - August 2019</href></h3>
@@ -60,7 +55,6 @@
             </ul>
           </div>
         </div>
-          
         <div class="card">
           <div class="card-header">
             <h3>Student Technician, Applied Research Laboratories <href style = "float: right">May 2018 - August 2018</href></h3>
@@ -72,8 +66,75 @@
             </ul>
           </div>
         </div>        
+      </div>  
+      <div class="content-header">
+        <h2>Projects</h2>    
       </div>
-      
+      <div class="content-body">
+        <div class="card">
+          <div class="card-header">
+            <h3>AES Hardware Accelerator <href style = "float: right">Fall 2019</href></h3>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>Developed AES accelerator for Zedboard as part of EE382N-4 at UT Austin</li>
+              <li>Wrote Verilog state machine to control AES core and Software to offload computation</li>
+              <li>More Information can be found here:
+                <a href="https://github.com/matthewbarondeau/AES_Hardware_Accelerator">AES</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Real Time Operating System <href style = "float: right">Spring 2019</href></h3>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>Real-Time Operating System developed for TI TM4C123GH6PM</li>
+              <li>Originally design during EE445M course, but has been cleaned up and flushed out</li>
+              <li>Components include UART Interpreter, Priority Scheduler, Process Loader, and PI Control Application</li>
+              <li>More Information can be found here:
+                  <a href="https://github.com/matthewbarondeau/RTOS"> RTOS</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Self Monitoring Stress System <href style = "float: right">Fall 2019 - Spring 2020</href></h3>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>Senior design project at UT Austin under Dr. Emily Porter</li>
+              <li>Designed system consisting of MSP432, iOS application, and network of sensors to measure and track stress</li>
+              <li>Sensors collected heart rate, movement, and GSR</li>
+              <li>Sensors, MSP432, and power systems were laid out on PCB</li>
+              <li>More information about the embedded system can be found here: 
+                <a href="https://github.com/matthewbarondeau/Self-Monitor-for-Detecting-Stress-Levels">SMSS</a>
+              </li>
+              <li> More information about the mobile application and model can be found here: 
+                <a href="https://github.com/mattqd97/PowerPorterIOS"> IOS App</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Tron Handheld video game <href style = "float: right">Spring 2017</href></h3>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>Originally designed for EE319k fial competition</li>
+              <li>Overhauled to include CAN based multiplayer, SD card storage, and cleaned up code</li>
+              <li>Two players play head to head over CAN in the classic game TRON</li>
+              <li>More Information can be found here:
+                <a href="https://github.com/matthewbarondeau/TronV2"> TronV2</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="content-header">
         <h2>Skills</h2>
       </div>
@@ -82,8 +143,7 @@
           <div class="card-header">
             <h3>Programming Languages</h3>
             <ul>
-              <li>C</li>
-              <li>C++</li>
+              <li>C/C++</li>
               <li>Verilog</li>
               <li>SystemVerilog</li>
               <li>Python</li>
@@ -92,20 +152,18 @@
             </ul>
           </div>
         </div>
-        
         <div class="card">
           <div class="card-header">
             <h3>Electronics</h3>
             <ul>
               <li>PCB Layout</li>
-              <li>Power Supply Design</li>
               <li>Soldering</li>
               <li>Oscilloscope Usage</li>
               </li>
             </ul>
           </div>
         </div>
-      </div>
+      </div>  
     </div>
     <div class="side-content"></div>
   </div>
