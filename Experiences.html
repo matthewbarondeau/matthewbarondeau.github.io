@@ -8,8 +8,9 @@
 <body>
   <div class="navbar">
     <a href="index.html">Home</a>
-    <a href="Experiences.html">Experience and Projects</a>
+    <a href="Experiences.html">Experience and Service</a>
     <a href="Teaching.html">Teaching</a>
+    <a href="Resources.html">Projects and Resources</a>
   </div>
   
   <div class="row">
@@ -19,13 +20,25 @@
         <h2>Technical Experience</h2>
       </div>
       <div class="content-body">
-         <div class="card">
+        <div class="card">
+          <div class="card-header">
+            <h3>Graduate Research Assistant, UT ECE Department <href style = "float: right">August 2020 - Present</href></h3>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>Investigating accelerator multiprocessing optimizations for streaming workloads</li>
+              <li>Modeling processor changes using gem5 system simulator</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
           <div class="card-header">
             <h3>Research Engineer I, Tactical Computing Labs <href style = "float: right">May 2021 - August 2021</href></h3>
           </div>
           <div class="card-content">
             <ul>
-              <li>In Progress</li>
+              <li>Profiled component runtime and communication overhead in SST simulator</li>
+              <li>Expanded protocol for asynchronous execution in programmable accelerator framework</li>
             </ul>
           </div>
         </div>
@@ -76,96 +89,62 @@
               <li>Wrote documentation for large scale FPGA system</li>
             </ul>
           </div>
-        </div>        
-      </div>  
+        </div> 
+        <div class="card">
+          <div class="card-header">
+            <h3>IT Operations Intern, Reynolds and Reynolds <href style = "float: right">Summers 2014 - 2017</href></h3>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>Installed new computers and security infrastructure at College Station office</li>
+              <li>Repaired internal user computers, printers, and phones</li>
+            </ul>
+          </div>
+        </div> 
+      </div> 
       <div class="content-header">
-        <h2>Projects</h2>    
+        <h2>Service</h2>
       </div>
       <div class="content-body">
         <div class="card">
           <div class="card-header">
-            <h3>Parallelization of the Barnes-Hut Algorithm <href style = "float: right">Spring 2021</href></h3>
+            <h3>Fig Faciliator, UT First Year Program <href style = "float: right">Fall 2021 - Present</href></h3>
           </div>
-          <div class="card-content">
+          <div class="card-conent">
             <ul>
-              <li>Developed CPU and GPU versions of Barnes-Hut algorithm</li>
-	      <li>Experimented with openMP to accelerate CPU versions</li>
-	      <li>Achieved 10x speedup over CPU version including tree construction and data transfer</li>
-              <li>More Information can be found here:
-		      <a href="https://gitlab.com/tboehm/ee382n20/-/tree/master/project">Barnes-Hut</a>
-	      </li>
-	    </ul>
-          </div>
-         </div>
-         <div class="card">
-          <div class="card-header">
-            <h3>Digital Spiking Neural Network Near-Data Accelerator <href style = "float: right">Spring 2021</href></h3>
-          </div>
-          <div class="card-content">
-            <ul>
-              <li>Designed and implemented SRAM SNN accelerator using Cadence</li>
-	      <li>Synthesized Verilog RTL and placed Nuerons at output of SRAM sense-amps</li>
-	      <li>Achieved results consistent with state-of-the-art accelerators</li>
-              <li>More Information can be found here:
-		      <a href="https://gitlab.com/tboehm/ee382n20/-/tree/master/project">Barnes-Hut</a>
-	      </li>
-	    </ul>
-          </div>
-        </div>
-	<div class="card">
-          <div class="card-header">
-            <h3>AES Hardware Accelerator <href style = "float: right">Fall 2019</href></h3>
-          </div>
-          <div class="card-content">
-            <ul>
-              <li>Developed AES accelerator for Zedboard as part of EE382N-4 at UT Austin</li>
-              <li>Wrote Verilog state machine to control AES core and Software to offload computation</li>
-              <li>More Information can be found here:
-                <a href="https://github.com/matthewbarondeau/AES_Hardware_Accelerator">AES</a> 
-              </li>
+              <li>Supervised student mentor in weekly meetings with first year and transfer students</li>
             </ul>
           </div>
         </div>
         <div class="card">
           <div class="card-header">
-            <h3>Real Time Operating System <href style = "float: right">Spring 2019</href></h3>
+            <h3>Student Volunteer, ESWEEK <href style = "float: right">Fall 2021</href></h3>
           </div>
-          <div class="card-content">
+          <div class="card-conent">
             <ul>
-              <li>Real-Time Operating System developed for TI TM4C123GH6PM</li>
-              <li>Originally design during EE445M course, but has been cleaned up and flushed out</li>
-              <li>Components include UART Interpreter, Priority Scheduler, Process Loader, and PI Control Application</li>
+              <li>Hosted zoom session for ESWEEK 2021 conferences</li>
+              <li>Communicated with session chairs and conference speakers</li>
             </ul>
           </div>
         </div>
         <div class="card">
           <div class="card-header">
-            <h3>Self Monitoring Stress System <href style = "float: right">Fall 2019 - Spring 2020</href></h3>
+            <h3>Student Volunteer, HKN <href style = "float: right">Fall 2019 - Spring 2020</href></h3>
           </div>
-          <div class="card-content">
+          <div class="card-conent">
             <ul>
-              <li>Senior design project at UT Austin under Dr. Emily Porter</li>
-              <li>Designed system consisting of MSP432, iOS application, and network of sensors to measure and track stress</li>
-              <li>Sensors collected heart rate, movement, and GSR</li>
-              <li>Sensors, MSP432, and power systems were laid out on PCB</li>
-              <li>More information about the embedded system can be found here: 
-                <a href="https://github.com/matthewbarondeau/Self-Monitor-for-Detecting-Stress-Levels">SMSS</a>
-              </li>
-              <li> More information about the mobile application and model can be found here: 
-                <a href="https://github.com/mattqd97/PowerPorterIOS"> IOS App</a>
-              </li>
+              <li>Volunteered for university and departmental events inclusing advising and community outreach</li>
             </ul>
           </div>
         </div>
         <div class="card">
           <div class="card-header">
-            <h3>Tron Handheld video game <href style = "float: right">Spring 2017</href></h3>
+            <h3>Fig Mentor, UT First Year Program <href style = "float: right">Fall 2017 - Fall 2019</href></h3>
           </div>
-          <div class="card-content">
+          <div class="card-conent">
             <ul>
-              <li>Originally designed for EE319k fial competition</li>
-              <li>Overhauled to include CAN based multiplayer, SD card storage, and cleaned up code</li>
-              <li>Two players play head to head over CAN in the classic game TRON</li>
+              <li>Led weekly section to introduce students to campus resources and course material</li>
+              <li>Hosted review sessions prior to exams for multiple first year groups</li>
             </ul>
           </div>
         </div>
