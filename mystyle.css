@@ -32,11 +32,11 @@ table {
 }
 
 .card-header {
-  padding: .75rem 1.25rem;
+  padding: .0rem 1.25rem;
   background-color: white;
   border-bottom: 1px solid rgba(0,0,0,.075);
-  border-top-left-radius: .25rem;
-  border-top-right-radius: .25rem;
+  border-top-left-radius: .125rem;
+  border-top-right-radius: .125rem;
 }
 
 .card-content {
