@@ -65,36 +65,6 @@ body {
   margin: 0;
 }
 
-/*SOCIAL LINKS*/
-.ul-social {
-  text-align: center;
-  padding-left: 0;
-}
-
-.li-social-links {
-  display: inline-block;
-  list-style: none;
-}
-
-.social {
-  font-size: 2em;
-  color: white;
-  padding: 20px;
-}
-
-/*ARROW LINK*/
-#down-arrow {
-  /*position: absolute;
-  width: 100%;*/
-  margin-top: auto;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-#down-arrow a {
-  color: white;
-}
-
 /*CONTENT*/
 .container {
   /*sets up flexbox*/
@@ -180,101 +150,6 @@ h4 {
 
 .job-title {
   float: right;
-}
-
-/*PROJECTS*/
-.project-card {
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: 5px;
-  margin-bottom: 30px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
-}
-
-.project-image {
-  flex: 1 0 auto;
-}
-
-.project-image img {
-  display: block;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  width: 250px;
-}
-
-.project-content {
-  flex: 1 1 auto;
-  padding: 1.25rem;
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-/*SKILLS*/
-.ul-skills {
-  text-align: center;
-  padding-left: 0;
-}
-
-.li-skills {
-  display: inline-block;
-  margin: 7px;
-  padding: 5px 10px;
-  color: white;
-  background: #1a535c;
-  list-style: none;
-  cursor: default;
-  font-size: 1.2em;
-}
-
-/*CONTACT*/
-.blue {
-  background: #1a535c;
-  text-align: center;
-}
-
-.contact {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.contact input, .contact textarea {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-  border: none;
-  margin-bottom: 10px;
-  background: #A7C4C9;
-  color: #1a535c;
-  -webkit-transition: .5s ease all;
-  transition: .5s ease all;
-}
-
-.contact textarea {
-  height: 150px;
-  resize: none;
-}
-
-.contact button {
-  display: block;
-  width: 100%;
-  background: #fff;
-  border-radius: 4px;
-  padding: 5px 10px;
-  border: none;
-  color: #3498db;
-  font-weight: 700;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  -webkit-transition: .5s ease all;
-  transition: .5s ease all;
-}
-
-.white-text {
-  color: white;
 }
 
 /*Extras*/
