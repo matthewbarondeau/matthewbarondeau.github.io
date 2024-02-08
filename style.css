@@ -35,8 +35,7 @@ body {
 
 /*JUMBOTRON*/
 .jumbotron {
-  height: 100vh; /*height to 100% of view height*/
-  background: #1a535c; /*background color to blue*/
+  height: 50vh; /*height to 100% of view height*/
   margin-bottom: 0; /*no bottom margin*/
 
   display: flex;
@@ -46,8 +45,8 @@ body {
 .jumbotron-text {
   /*TAGLINE UNDER NAME*/
   font-weight: 400;
-  font-size: 2em;
-  color: white;
+  font-size: 1em;
+  color: black;
   text-align: center;
   padding-top: 150px;
 }
@@ -55,7 +54,7 @@ body {
 .jumbotron-text h1 {
   /*YOUR NAME*/
   /*text-transform: uppercase;*/
-  font-weight: 800;
+  font-weight: 400;
   font-size: 3em;
   margin-top: 0;
   margin-bottom: 0;
