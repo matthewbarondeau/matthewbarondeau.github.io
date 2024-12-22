@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+ 
+<body>
+    <div class="navbar">
+        <a href="index.html">About</a>
+        <a href='education.html'>Education</a>
+        <a href='experience.html'>Experience</a>
+        <a href='resources.html'> Resources</a>
+    </div>
+
+    <div class="row">
+        <div class="side-content"></div>
+        <div class="main-content">
+            <div class="content-header">
+                <a class="anchor" name="Research"></a>
+                <h2>Research</h2>
+            </div>
+            <div class="content-body">
+
+                <div class='card'>
+                    <div class='card-header'>
+                       <h4>Open-Source Performance Counter Dataset for System Prediction Problems</h4>
+                    </div>
+                    <div class='card-content'>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='card-header'>
+                       <h4>Proactive ML-Based Runtime Manager for Heterogeneous MPSoCs</h4>
+                    </div>
+                    <div class='card-content'>
+                        <ul>
+                            <li>Investigating proactive runtime management for heterogeneous cpus</li>
+                            <li>Awarded <a href='https://www.ece.utexas.edu/news/texas-ece-students-win-qualcomm-innovation-fellowship'>Qualcomm Innovation Fellowship</a></li>
+                            <li>Project proposal can be found here: <a href='resources/papers/QIF_Proposal.pdf'>Runtime Proposal</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='card-header'>
+                       <h4>Virtual Register Context Architecture for Efficient Near-Memory Processing</h4>
+                    </div>
+                    <div class='card-content'>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="side-content"></div>
+    </div>
+
+    <div class="row">
+        <div class="side-content"></div>
+        <div class="main-content">
+            <div class="content-header">
+                <a class="anchor" name="Research"></a>
+                <h2>Projects</h2>
+            </div>
+            <div class="content-body">
+
+                <div class='card'>
+                    <div class='card-header'>
+                       <h4> Virtual Register Contexts for Near-Memory Workloads</h4>
+                    </div>
+                    <div class='card-content'>
+                        <ul>
+                            <li>Developed a register cache to hold partial contexts and reduce multiprocessing overhead</li>
+                            <li>Engineered a register replacement policy that achieves a hit-rate within 2% of Belady's min</li>
+                            <li>Paper under review</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='card-header'>
+                       <h4> Optimizing Producer-Consumer Operations in Multi-Core Coherent Systems </h4>
+                    </div>
+                    <div class='card-content'>
+                        <ul>
+                            <li>Modeled coherence changes to reduce producer-consumer overheads by tagging final writes</li>
+                            <li>Achieved 2.5x speedup with larger benefits for increasing coherence latency</li>
+                            <li>Project paper can be found here: <a href='resources/papers/Parallel_Arch_Report.pdf'>Parallel_Paper</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='card-header'>
+                       <h4> Evaluating Runahead Execution with Data Prefetching </h4>
+                    </div>
+                    <div class='card-content'>
+                        <ul>
+                            <li>Evaluated precise runahead execution in concert with data prefetchers using SCARAB simulator</li>
+                            <li>Demonstrated that runahead execution enables better timeliness for data prefetchers</li>
+                            <li>Project paper can be found here: <a href='resources/papers/CS395T_Final_Report.pdf'>Runahead Paper</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='card-header'>
+                       <h4> Evaluation of Multiplier Rounding Drift in Arithmetic Applications </h4>
+                    </div>
+                    <div class='card-content'>
+                        <ul>
+                            <li>Surveyed multiplier rounding techniques in multiplication-intensive algorithms</li>
+                            <li>Determined that true rounding and truncation result in the least cumulative error</li>
+                            <li>Project paper can be found here: <a href='resources/papers/High_Speed_Report.pdf'>Rounding_Paper</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='card-header'>
+                       <h4> CNN Hardware Accelerator </h4>
+                    </div>
+                    <div class='card-content'>
+                        <ul>
+                            <li>Tuned YOLOv4 for ultra96 MPSoC through openMP and FPGA hardware accelerator</li>
+                            <li>Achieved 40x speedup over baseline</li>
+                            <li>Project repository can be found here: <a href='https://gitlab.com/tboehm/ee382m20/'>ML_Accelerator</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='card-header'>
+                       <h4> Parallel Implementation of the Barnes-Hut Algorithm </h4>
+                    </div>
+                    <div class='card-content'>
+                        <ul>
+                            <li>Developed openMP CPU and GPU versions of Barnes-Hut algorithm</li>
+                            <li>Achieved 10x speedup over baseline through parallel tree construction and processing</li>
+                            <li>Project repository can be found here: <a href='https://gitlab.com/tboehm/ee382n20/-/tree/master'>Barnes-Hut</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='card-header'>
+                       <h4>Self-Monitoring Stress Device </h4>
+                    </div>
+                    <div class='card-content'>
+                        <ul>
+                            <li>Designed system consisting of MSP432, iOS app, and sensor network to measure stress</li>
+                            <li>Embedded system repository can be found here: <a href='https://github.com/matthewbarondeau/Self-Monitor-for-Detecting-Stress-Levels'>Embedded Software</a></li>
+                            <li>iMobile application can be found here: <a href='https://github.com/mattqd97/PowerPorterIOS'>IOS App</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-content"></div>
+    </div>
+</body>
+</html>

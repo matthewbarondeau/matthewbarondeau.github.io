@@ -35,7 +35,7 @@ body {
 
 /*JUMBOTRON*/
 .jumbotron {
-  height: 100vh; /*height to 100% of view height*/
+  height: 50vh; /*height to 100% of view height*/
   margin-bottom: 0; /*no bottom margin*/
 
   display: flex;
