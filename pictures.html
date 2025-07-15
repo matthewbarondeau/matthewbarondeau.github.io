@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pictures</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    .gallery-section {
+      margin: 40px auto;
+      max-width: 1000px;
+      padding: 0 20px;
+    }
+
+    .gallery-section:first-of-type {
+      margin-top: 100px;
+    }
+
+    .gallery-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+
+    /* Lightbox styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80vh;
+      margin-bottom: 10px;
+    }
+
+    .lightbox-caption {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .lightbox-close {
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="experience.html">Experience</a>
+    <a href="resources.html">Resources</a>
+    <a href="pictures.html">Pictures</a>
+  </div>
+
+  <div style="height: 50px;"></div>
+
+  <div class="gallery-section">
+    <h2>Work & Hobbies</h2>
+    <div class="gallery">
+      <img src="pictures/2024/Work_01.jpeg" alt="My desk at UT's Engineering Education and Research Center" onclick="openLightbox(this)">
+      <img src="pictures/2024/Work_02.jpeg" alt="Nvidia Voyager Bar near my desk as an intern" onclick="openLightbox(this)">
+      <img src="pictures/2025/Work_01.jpeg" alt="UT Symphony Orchestra" onclick="openLightbox(this)">
+      <img src="pictures/2025/Work_02.jpeg" alt="Padres vs Giants at Oracle Park" onclick="openLightbox(this)">
+    </div>
+  </div>
+
+  <div class="gallery-section">
+    <h2>Travel</h2>
+    <div class="gallery">
+      <img src="pictures/2024/Travel_01.jpeg" alt="Cathedral Basilica of St. Joseph in San Jose" onclick="openLightbox(this)">
+      <img src="pictures/2024/Travel_02.jpeg" alt="The best part of Arizona, an absence of Arizona!" onclick="openLightbox(this)">
+      <img src="pictures/2024/Travel_03.jpeg" alt="Golden Gate National Recreation Area" onclick="openLightbox(this)">
+      <img src="pictures/2024/Travel_04.jpeg" alt="Monterey Bay Aquarium" onclick="openLightbox(this)">
+      <img src="pictures/2024/Travel_05.jpeg" alt="Palace of Fine Arts in San Francisco" onclick="openLightbox(this)">
+      <img src="pictures/2024/Travel_06.jpeg" alt="Harbor in San Diego" onclick="openLightbox(this)">
+      <img src="pictures/2025/Travel_01.jpeg" alt="Lands End in San Francisco" onclick="openLightbox(this)">
+      <img src="pictures/2025/Travel_02.jpeg" alt="A view from the coast in Monterey" onclick="openLightbox(this)">
+      <img src="pictures/2025/Travel_03.jpeg" alt="A quick visit to Stanford" onclick="openLightbox(this)">
+      <img src="pictures/2025/Travel_04.jpeg" alt="Surfing museum in Santa Cruz, straight out of a scooby doo episode" onclick="openLightbox(this)">
+      <img src="pictures/2025/Travel_05.jpeg" alt="Church of St. Peter and St. Paul in San Francisco" onclick="openLightbox(this)">
+      <img src="pictures/2025/Travel_06.jpeg" alt="UC Berkeley campus" onclick="openLightbox(this)">
+    </div>
+  </div>
+
+  <div class="gallery-section">
+    <h2>Cooking & Baking</h2>
+    <div class="gallery">
+      <img src="pictures/2024/Food_01.jpeg" alt="First turkey I made on my own" onclick="openLightbox(this)">
+      <img src="pictures/2024/Food_02.jpeg" alt="Raspberry and chocolate torte" onclick="openLightbox(this)">
+      <img src="pictures/2025/Food_01.jpeg" alt="Chocolate chip loaf" onclick="openLightbox(this)">
+      <img src="pictures/2025/Food_02.jpeg" alt="Peach cobbler (my speciality)" onclick="openLightbox(this)">
+      <img src="pictures/2025/Food_03.jpeg" alt="Pineapple upside down cake" onclick="openLightbox(this)">
+      <img src="pictures/2025/Food_04.jpeg" alt="Strawberry cheesecake" onclick="openLightbox(this)">
+      <img src="pictures/2025/Food_05.jpeg" alt="Homemade cheese pizza" onclick="openLightbox(this)"> 
+      <img src="pictures/2025/Food_06.jpeg" alt="Fettucine alfredo from scratch" onclick="openLightbox(this)">
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <script>
+    function openLightbox(imgElement) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxCaption = document.getElementById('lightbox-caption');
+
+      lightbox.style.display = 'flex';
+      lightboxImg.src = imgElement.src;
+      lightboxCaption.innerText = imgElement.alt;
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+
+    // Optional: allow closing with Esc key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+  </script>
+
+</body>
+</html>
+
