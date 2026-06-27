@@ -3,31 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Matthew Barondeau - Computer Architecture Ph.D. Candidate at UT Austin. Research in multithreading architectures, heterogeneous scheduling, and near-memory computing.">
+  <meta name="description" content="Matthew Barondeau - Resiliency and Safety Architect at Nvidia. Ph.D. in Computer Architecture from UT Austin.">
+  <meta property="og:title" content="Matthew Barondeau">
+  <meta property="og:description" content="Resiliency and Safety Architect at Nvidia. Ph.D. in Computer Architecture from UT Austin.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="resources/picture.jpeg">
   <title>Matthew Barondeau - Computer Architecture Researcher</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a535c'/><text x='16' y='22' font-family='sans-serif' font-size='18' font-weight='bold' fill='white' text-anchor='middle'>MB</text></svg>">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  <link rel="preload" href="resources/picture.jpeg" as="image">
+
+
 </head>
  
 <body>
     <div class="navbar">
-        <a href="index.html">About</a>
+        <a href="index.html" class="active">About</a>
         <a href="resources.html">Resources</a>
       </div>
 
+    <div class="intro">
     <div class='container'>
         <div class="jumbotron">
             <div class="jumbotron-text">
-                <div align="center">
-                    <img id="picture" src="resources/picture.jpeg" width="436" height="366" alt="Matthew Barondeau - Computer Architecture Researcher" loading="eager">
+                <div>
+                    <img id="picture" src="resources/picture.jpeg" alt="Matthew Barondeau - Computer Architecture Researcher">
                     <h1>Matthew Barondeau</h1>
-                    <p>Computer Architecture Ph.D. Candidate</p>
                 </div>
-            </div> 
+            </div>
 	    </div>
     </div>
 
@@ -35,19 +40,21 @@
         <div class="side-content"></div>
         <div class="main-content">
             <div class="content-header">
-                <a class="anchor" name="About"></a>
                 <h2>About Me</h2>
             </div>
             <div class="content-body">
-                <p>I'm a sixth-year Electrical and Computer Engineering Ph.D. candidate at UT Austin, working with Dr. Andreas Gerstlauer in the SLAM Lab. My research focuses on efficient multithreading architectures for near-memory computing, ML-based heterogeneous runtime optimization, and resiliency in parallel systems. I'm particularly interested in microarchitecture design, compiler optimizations, and ML-driven runtime reconfiguration. I'll be starting as a Resiliency and Safety Architect at Nvidia in December 2026.</p>
+                <p>I'm a Resiliency and Safety Architect at Nvidia in Austin, TX, working on GPU datacenter resiliency and automotive safety. Before joining full-time, I completed three internships at Nvidia across GPU architecture, L2 cache design, and resiliency analysis.</p>
 
-                <p>I've taught embedded systems courses at both undergraduate and graduate levels, and I mentor first-year ECE students through UT's First-Year Interest Group program. Beyond academia, I enjoy <a href="https://www.goodreads.com/review/list/182979500" target="_blank">science fiction and fantasy novels</a>, soccer, running, hiking, and baking.</p>
+                <p>I received my Ph.D. in Electrical and Computer Engineering from UT Austin in 2026, advised by Dr. Andreas Gerstlauer in the SLAM Lab. My dissertation, <em>Efficient Scheduling in Same-ISA Heterogeneous Systems</em>, focused on ML-based runtime optimization and near-memory computing architectures. During my time at UT, I was a Qualcomm Innovation Fellow, received the Texas ECE Graduate Leadership Award, and taught courses ranging from embedded systems to compilers. I also mentored first-year ECE students as a First-Year Interest Group instructor.</p>
+
+                <p>Outside of work, I'm an endurance runner and hiker. I enjoy reading, mostly <a href="https://www.goodreads.com/review/list/182979500" target="_blank">science fiction and fantasy</a>, with a particular fondness for Brandon Sanderson's Cosmere, Robert Jordan's Wheel of Time, and the Star Wars Expanded Universe. I enjoy soccer and am an MNUFC supporter. When I'm not running or lost in a novel, I enjoy planning a move to Minnesota, reading up on home efficiency improvements (especially geothermal heat pumps), and cooking and baking.</p>
                 <p style='text-align:center'>
-                    <a href='resources/CV.pdf' class='button' target='_blank'>CV</a>
+                    <a href='resources/cv.pdf' class='button' target='_blank'>CV</a>
                  </p>
             </div>
         </div>
         <div class="side-content"></div>
+    </div>
     </div>
 
     <!-- Pictures Section -->
@@ -61,50 +68,58 @@
                 <div class="gallery-section">
                     <h3>Life & Hobbies</h3>
                     <div class="gallery">
-                        <img src="pictures/life_hobbies/thumbs/01.jpeg" data-full="pictures/life_hobbies/01.jpeg" alt="My desk at UT's Engineering Education and Research Center" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/life_hobbies/thumbs/02.jpeg" data-full="pictures/life_hobbies/02.jpeg" alt="Nvidia Voyager Bar near my desk as an intern" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/life_hobbies/thumbs/03.jpeg" data-full="pictures/life_hobbies/03.jpeg" alt="UT Symphony Orchestra" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/life_hobbies/thumbs/04.jpeg" data-full="pictures/life_hobbies/04.jpeg" alt="Padres vs Giants at Oracle Park" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/life_hobbies/thumbs/05.jpeg" data-full="pictures/life_hobbies/05.jpeg" alt="Longhorn Run 2025" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/life_hobbies/thumbs/06.jpeg" data-full="pictures/life_hobbies/06.jpeg" alt="Christmas 2024" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/life_hobbies/thumbs/07.jpeg" data-full="pictures/life_hobbies/07.jpeg" alt="Lego Executor Star Destroyer" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/life_hobbies/thumbs/08.jpeg" data-full="pictures/life_hobbies/08.jpeg" alt="Nvidia plant wall" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/life_hobbies/01.jpeg" alt="My desk at UT's Engineering Education and Research Center" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/life_hobbies/02.jpeg" alt="Nvidia Voyager Bar near my desk as an intern" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/life_hobbies/03.jpeg" alt="UT Symphony Orchestra" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/life_hobbies/04.jpeg" alt="Padres vs Giants at Oracle Park" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/life_hobbies/05.jpeg" alt="Longhorn Run 2025" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/life_hobbies/06.jpeg" alt="Christmas 2024" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/life_hobbies/07.jpeg" alt="Lego Executor Star Destroyer" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/life_hobbies/08.jpeg" alt="Nvidia plant wall" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/life_hobbies/09.jpeg" alt="RTOS final track in EERC atrium" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/life_hobbies/10.jpeg" alt="Austin Greenbelt" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
                     </div>
                 </div>
 
                 <div class="gallery-section">
                     <h3>Travel</h3>
                     <div class="gallery">
-                        <img src="pictures/travel/thumbs/01.jpeg" data-full="pictures/travel/01.jpeg" alt="Cathedral Basilica of St. Joseph in San Jose" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/travel/thumbs/02.jpeg" data-full="pictures/travel/02.jpeg" alt="The best part of Arizona, an absence of Arizona!" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/travel/thumbs/03.jpeg" data-full="pictures/travel/03.jpeg" alt="Golden Gate National Recreation Area" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/travel/thumbs/04.jpeg" data-full="pictures/travel/04.jpeg" alt="Monterey Bay Aquarium" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/travel/thumbs/05.jpeg" data-full="pictures/travel/05.jpeg" alt="Palace of Fine Arts in San Francisco" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/travel/thumbs/06.jpeg" data-full="pictures/travel/06.jpeg" alt="Harbor in San Diego" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/travel/thumbs/07.jpeg" data-full="pictures/travel/07.jpeg" alt="Lands End in San Francisco" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/travel/thumbs/08.jpeg" data-full="pictures/travel/08.jpeg" alt="A view from the coast in Monterey" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/travel/thumbs/09.jpeg" data-full="pictures/travel/09.jpeg" alt="A quick visit to Stanford" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/travel/thumbs/10.jpeg" data-full="pictures/travel/10.jpeg" alt="Surfing museum in Santa Cruz, straight out of a scooby doo episode" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/travel/thumbs/11.jpeg" data-full="pictures/travel/11.jpeg" alt="Church of St. Peter and St. Paul in San Francisco" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/travel/thumbs/12.jpeg" data-full="pictures/travel/12.jpeg" alt="UC Berkeley campus" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/travel/thumbs/13.jpeg" data-full="pictures/travel/13.jpeg" alt="Angel of Grief sculpture" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/travel/thumbs/14.jpeg" data-full="pictures/travel/14.jpeg" alt="Roses at Berkeley" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/travel/thumbs/15.jpeg" data-full="pictures/travel/15.jpeg" alt="La Jolla Beach" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/travel/01.jpeg" alt="Cathedral Basilica of St. Joseph in San Jose" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/travel/02.jpeg" alt="The best part of Arizona, an absence of Arizona!" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/travel/03.jpeg" alt="Golden Gate National Recreation Area" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/travel/04.jpeg" alt="Monterey Bay Aquarium" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/travel/05.jpeg" alt="Palace of Fine Arts in San Francisco" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/travel/06.jpeg" alt="Harbor in San Diego" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/travel/07.jpeg" alt="Lands End in San Francisco" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/travel/08.jpeg" alt="A view from the coast in Monterey" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/travel/09.jpeg" alt="A quick visit to Stanford" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/travel/10.jpeg" alt="Surfing museum in Santa Cruz, straight out of a scooby doo episode" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/travel/11.jpeg" alt="Church of St. Peter and St. Paul in San Francisco" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/travel/12.jpeg" alt="UC Berkeley campus" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/travel/13.jpeg" alt="Angel of Grief sculpture" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/travel/14.jpeg" alt="Roses at Berkeley" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/travel/15.jpeg" alt="La Jolla Beach" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
                     </div>
                 </div>
 
                 <div class="gallery-section">
                     <h3>Cooking & Baking</h3>
                     <div class="gallery">
-                        <img src="pictures/baking_cooking/thumbs/01.jpeg" data-full="pictures/baking_cooking/01.jpeg" alt="First turkey I made on my own" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/baking_cooking/thumbs/02.jpeg" data-full="pictures/baking_cooking/02.jpeg" alt="Raspberry and chocolate torte" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/baking_cooking/thumbs/03.jpeg" data-full="pictures/baking_cooking/03.jpeg" alt="Chocolate chip loaf" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/baking_cooking/thumbs/04.jpeg" data-full="pictures/baking_cooking/04.jpeg" alt="Peach cobbler (my speciality)" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/baking_cooking/thumbs/05.jpeg" data-full="pictures/baking_cooking/05.jpeg" alt="Pineapple upside down cake" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/baking_cooking/thumbs/06.jpeg" data-full="pictures/baking_cooking/06.jpeg" alt="Strawberry cheesecake" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/baking_cooking/thumbs/07.jpeg" data-full="pictures/baking_cooking/07.jpeg" alt="Homemade cheese pizza" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/baking_cooking/thumbs/08.jpeg" data-full="pictures/baking_cooking/08.jpeg" alt="Fettucine alfredo from scratch" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
-                        <img src="pictures/baking_cooking/thumbs/09.jpeg" data-full="pictures/baking_cooking/09.jpeg" alt="Homemade banana bread" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/baking_cooking/01.jpeg" alt="First turkey I made on my own" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/baking_cooking/02.jpeg" alt="Raspberry and chocolate torte" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/baking_cooking/03.jpeg" alt="Chocolate chip loaf" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/baking_cooking/04.jpeg" alt="Peach cobbler (my speciality)" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/baking_cooking/05.jpeg" alt="Pineapple upside down cake" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/baking_cooking/06.jpeg" alt="Strawberry cheesecake" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/baking_cooking/07.jpeg" alt="Homemade cheese pizza" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/baking_cooking/08.jpeg" alt="Fettucine alfredo from scratch" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/baking_cooking/09.jpeg" alt="Homemade banana bread" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/baking_cooking/10.jpeg" alt="Brownie Cookies" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/baking_cooking/11.jpeg" alt="Cast iron skillet chocolate chip cookie" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/baking_cooking/12.jpeg" alt="Maple-Citrus glazed salmon" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/baking_cooking/13.jpeg" alt="Chocolate sheet cake aka Diabetes cake" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/baking_cooking/14.jpeg" alt="Peach cake in a bundt pan" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
+                        <img src="pictures/baking_cooking/15.jpeg" alt="Chicken enchiladas" onclick="openLightbox(this)" loading="lazy" width="200" height="133">
                     </div>
                 </div>
             </div>
@@ -115,34 +130,40 @@
     <!-- Lightbox Modal -->
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">
         <span class="lightbox-close">&times;</span>
-        <img id="lightbox-img" src="">
-        <div class="lightbox-caption" id="lightbox-caption"></div>
+        <span class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); navigateLightbox(-1)">&#10094;</span>
+        <img id="lightbox-img" src="" onclick="event.stopPropagation()">
+        <div class="lightbox-caption" id="lightbox-caption" onclick="event.stopPropagation()"></div>
+        <span class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); navigateLightbox(1)">&#10095;</span>
+    </div>
+
+    <div class="footer">
+        <a href="mailto:mebarondeau@utexas.edu">Email</a>
+        <a href="https://github.com/matthewbarondeau" target="_blank">GitHub</a>
+        <a href="https://www.goodreads.com/review/list/182979500" target="_blank">Goodreads</a>
     </div>
 
     <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+        var currentGalleryImages = [];
+        var currentImageIndex = 0;
 
-        // Lightbox functionality
         function openLightbox(imgElement) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            const lightboxCaption = document.getElementById('lightbox-caption');
+            var gallery = imgElement.closest('.gallery');
+            currentGalleryImages = Array.from(gallery.querySelectorAll('img'));
+            currentImageIndex = currentGalleryImages.indexOf(imgElement);
 
-            lightbox.style.display = 'flex';
-            lightboxImg.src = imgElement.dataset.full || imgElement.src;
-            lightboxCaption.innerText = imgElement.alt;
+            document.getElementById('lightbox').style.display = 'flex';
+            document.getElementById('lightbox-img').src = imgElement.src;
+            document.getElementById('lightbox-caption').innerText = imgElement.alt;
+        }
+
+        function navigateLightbox(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) currentImageIndex = currentGalleryImages.length - 1;
+            if (currentImageIndex >= currentGalleryImages.length) currentImageIndex = 0;
+
+            var img = currentGalleryImages[currentImageIndex];
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox-caption').innerText = img.alt;
         }
 
         function closeLightbox() {
@@ -150,19 +171,11 @@
         }
 
         document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeLightbox();
+            if (document.getElementById('lightbox').style.display === 'flex') {
+                if (event.key === 'Escape') closeLightbox();
+                if (event.key === 'ArrowLeft') navigateLightbox(-1);
+                if (event.key === 'ArrowRight') navigateLightbox(1);
             }
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('.gallery img').forEach(img => {
-                if (img.complete) {
-                    img.classList.add('loaded');
-                } else {
-                    img.addEventListener('load', () => img.classList.add('loaded'));
-                }
-            });
         });
     </script>
 
